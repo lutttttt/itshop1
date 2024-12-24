@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{%static 'css/s.css'%}">
+</head>
+<body>
+<div class="products">
+{%for product in products%}
+<div class ='product'>
+<h1>назва:{{product.name}}</h1>
+    опис:{{product.description}}<br>
+    ціна:{{product.price}}
+
+</div>
+
+{%endfor%}
+</div>
+</body>
+</html>
