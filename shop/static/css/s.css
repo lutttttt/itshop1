@@ -1,0 +1,116 @@
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+
+    justify-content:center;
+
+    flex-direction:row;
+}
+.product{
+    background-color:grey;
+    border:solid 5px black;
+    margin-top: 10px;
+    padding:10px;
+    width:300px;
+    text-align:center;
+    margin:auto;
+
+}
+.sellers{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:left;
+
+    flex-direction:row;
+
+
+}
+.seller{
+    background-color: aquamarine;
+    border: solid 3px rgb(22, 77, 22);
+    /* margin:auto; */
+    width: 300px; 
+    padding:5px ;
+    text-align: center;
+    margin-top:10px ;
+}
+#id_description,#id_price,#id_name,#id_category,#id_slug,#id_username,#id_password,.input-field{
+    background-color: rgb(167, 235, 211);
+    border: solid 2px black;
+    font-size: medium;
+    font-weight: 300;
+    
+
+}
+#add_pb{
+    background-color: rgb(133, 175, 161);
+    border: solid 1px black;
+}
+#login{
+
+    position: absolute;
+     top: 43%;
+    left: 38%;
+}
+a{
+    color: rgb(180, 250, 227);
+    text-decoration:none ;
+}
+.sd-o{
+    background-color: rgb(0, 0, 0);
+    transition: all .5s ease;
+    margin-bottom: 5px;
+    z-index: 10;
+}
+.sd-o:hover{
+    background-color: rgb(19, 85, 63);
+
+}
+#name{
+    background-color: rgb(32, 108, 82);
+    font-size: xx-large;
+    font-weight: 400;
+    font-family: Impact;
+    letter-spacing: 3px;
+    text-align: center;
+}
+#ac{
+    position: absolute;
+    left: 0.5%;
+    top: 10%;
+    background-color: rgb(80, 143, 122);
+    width: 300px;
+    height: 500px ;
+}
+#on{
+    position: absolute;
+    right: 0.5%;
+    top: 10%;
+    background-color: rgb(80, 143, 122);
+    width: 300px;
+    height: 500px ;
+}
+.bh{
+    position: absolute;
+    top: 10%;
+    left: 26%;
+
+    background-color: rgb(155, 213, 194);
+    width: 600px ;
+    height: 300px;
+}
+.producth{
+    position: absolute;
+    background-color: rgb(155, 193, 181);
+    font-family: Impact;
+    border: solid 0.5px black;
+    height: 200px;
+    width: 200px;
+    top: 25px;
+    left: 48px;
+
+
+}
+

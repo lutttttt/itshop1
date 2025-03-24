@@ -1,0 +1,8 @@
+{%extends 'shop/base.html' %}
+{%block content%}
+<form method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="sumbit" id="add_pb">send</button>
+    </form>
+{%endblock%}

@@ -1,0 +1,19 @@
+{%extends 'shop/base.html' %}
+{%block content%}
+<form method="post">
+    {%csrf_token%}
+    <p>
+    <label for="{{form.username.id_for_label}}">Ведіть юзернейм</label><br>
+    {{form.username}}<br>
+    </p>
+    <p>
+    <label >Введіть пошту</label><br>
+    {{form.email}}<br>
+    </p>
+    <p>
+    <label >Введіть пароль</label><br>
+    {{form.password1}}<br>
+    </p>
+    <button type="submit">надіслати дані</button>
+</form>
+{%endblock%}

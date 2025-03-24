@@ -1,0 +1,94 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{%static 'css/s.css'%}">
+ <style>
+  #sidebar_button{
+  position: fixed;
+  right: 0;
+  top: 10px;
+  background-color: rgb(121, 189, 167);
+  border: solid 3px black;
+  transition: all 0.4s ease;
+  }
+#sidebar_button:hover{
+background-color: rgb(72, 104, 93);
+}
+#sidebar_button:active{
+  background-color: rgb(42, 74, 62);
+  transform: scale(1.2);
+}
+  #sidebar{
+    position:absolute;
+    left: -200px;
+    top: 0;
+    background-color: black;
+    color:white;
+    width: 200px;
+    height: 100vh;
+    z-index: 10;
+  }
+</style>
+
+</head>
+<body>
+  <div id="sidebar">
+      <div class="sd-o">
+    <a href="{%url 'home'%}">
+Головна<br>
+</a>
+</div>
+<div class="sd-o">
+<a href="{%url 'register'%}">
+
+      Регістрація<br>
+    </a>
+  </div>
+  <div class="sd-o">
+    <a href="{%url 'login'%}">
+    
+          Авторизація<br>
+        </a>
+      </div>
+    <div class="sd-o">
+    <a href="{%url 'products'%}">
+      Продукти<br>
+    </a>
+  </div>
+    <div class="sd-o">
+    <a href="{%url 'sellers' %}">
+      Продавці<br>
+    </a>
+  </div>
+    <div class="sd-o">
+    <a href="{%url 'add_product'%}">
+      Створити продукт
+   </a>
+  </div>
+  </div>
+  <button id="sidebar_button">Меню</button>
+
+
+
+
+
+{%block content%}
+{%endblock%}
+<script>
+      const sidebar=document.getElementById('sidebar');
+  const sidebar_button=document.getElementById('sidebar_button')
+  let side_bar_open=false;
+  sidebar_button.addEventListener('click',()=>{
+    if(side_bar_open==true){
+      sidebar.style.left='-200px'
+      side_bar_open=false;
+    }else{
+    sidebar.style.left='0px';
+    side_bar_open=true;}
+  })
+</script>
+</body>
+</html>

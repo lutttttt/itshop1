@@ -1,0 +1,11 @@
+{%extends 'shop/base.html' %}
+{%block content%}
+<form method="post" id="login">
+    {%csrf_token%}
+    username:
+    {{form.username}}<br><br>
+    password:
+    {{form.password}}<br>
+    <button type="submit"  id="add_pb">login</button>
+</form>
+{%endblock%}

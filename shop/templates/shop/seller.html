@@ -1,0 +1,15 @@
+
+{%extends 'shop/base.html' %}
+{%block content%}
+<div class="sellers">
+{%for seller in sellers%}
+<div class="seller">
+    <h1>юзернейм:{{seller.user.username}}</h1>
+    email:{{seller.user.email}}<br>
+    ім'я:{{seller.user.first_name}}<br>
+    рейтинг:{{seller.rate}}
+
+</div>
+{%endfor%}
+</div>
+{%endblock%}

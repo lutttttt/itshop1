@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #photo_url{
+    position:absolute;
+    left:0;
+    top:0;
+  
+  #sidebar{
+    position:absolute;
+    left: -200px;
+    top: 0;
+    background-color: black;
+    width: 200px;
+    height: 100vh;
+  }
+  </style>
+</head>
+<body>
+  <div id="sidebar">
+
+  </div>
+  <button id="sidebar_button"></button>
+<a href="https://wiki.org/" class="" id="photo_url">
+<img src="photo.png">
+</a>
+<script>
+  const sidebar=document.getElementById('sidebar');
+  const sidebar_button=document.getElementById('sidebar_button')
+  let side_bar_open=false;
+  sidebar_button.addEventListener('click',()=>{
+    if(side_bar_open==true){
+      sidebar.style.left='-200px'
+    }else{
+    sidebar.style.left='0px';
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{%extends 'shop/base.html' %}
+{%block content%}
+<style>
+  #hb{
+     position: absolute; 
+    margin-left: 170px;
+    margin-top: 110px;
+    color: rgb(82, 161, 132);
+  }
+</style>
+<div id="name">
+1
+</div>
+<div id="ac">
+
+     {%for product in products%} 
+     <div class="producth">
+    
+    
+     назва:{{product.name}}<br>
+    категорія:{{product.category}}<br>
+
+    ціна:{{product.price}} <br>
+   <a href="{% url 'product' product.slug %}" ><button id="hb"  >j</button></a>
+ </div>
+   {%endfor%} 
+
+   
+</div>
+<div id="on">
+
+</div>
+<div class="bh">
+
+</div>
+{%endblock%}
