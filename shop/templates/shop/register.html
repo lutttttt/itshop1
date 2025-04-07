@@ -1,6 +1,6 @@
 {%extends 'shop/base.html' %}
 {%block content%}
-<form method="post">
+<form method="post" id="login">
     {%csrf_token%}
     <p>
     <label for="{{form.username.id_for_label}}">Ведіть юзернейм</label><br>
@@ -14,6 +14,6 @@
     <label >Введіть пароль</label><br>
     {{form.password1}}<br>
     </p>
-    <button type="submit">надіслати дані</button>
+    <button type="submit" id="add_pb" >надіслати дані</button>
 </form>
 {%endblock%}
